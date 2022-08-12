@@ -1,19 +1,25 @@
 package com.genspark.spring.springframework.game;
 
-public class MarioGame {
-    public MarioGame() {
+import org.springframework.stereotype.Component;
+
+public class SuperContraGame implements GamingConsole {
+    public SuperContraGame() {
     }
 
+    @Override
     public void up(){
-        System.out.println("jump");
+        System.out.println("SuperContraGame jump");
     }
+    @Override
     public void down(){
-        System.out.println("crouch");
+        System.out.println("SuperContraGame crouch");
     }
+    @Override
     public void left(){
-        System.out.println("stop");
+        System.out.println("SuperContraGame stop");
     }
+    @Override
     public void right(){
-        System.out.println("accelerate");
+        System.out.println("SuperContraGame accelerate");
     }
 }

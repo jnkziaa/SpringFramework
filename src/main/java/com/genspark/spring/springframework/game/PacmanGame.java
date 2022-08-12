@@ -1,6 +1,9 @@
 package com.genspark.spring.springframework.game;
 
-public class Pacman implements GamingConsole {
+import org.springframework.stereotype.Component;
+
+
+public class PacmanGame implements GamingConsole {
     @Override
     public void up() {
         System.out.println("Pacman Go up");
